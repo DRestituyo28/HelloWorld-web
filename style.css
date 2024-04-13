@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+}
+
+.contenedor{
+    color: white;
+}
+
+.contenedor:hover{
+    border-bottom: 5px solid #f16060;
+    border-radius: 30px;
+    transition: 1.7s;
+}
+
+.contenedor h1{
+    font-size: 76px;
+    animation-name: slide;
+    animation-duration: 0.8s;
+}
+
+@keyframes slide {
+    from {
+        scale: 25%
+    }
+    to {
+        scale: 100%;
+    }
+}
+
+.contenedor h1:hover{
+    color: #e44e4e;
+    font-size: 96px;
+    transition: 0.5s;
+}
+
+.contenedor h1:focus{
+    border-bottom: 1px solid #e44e4e;
+}
